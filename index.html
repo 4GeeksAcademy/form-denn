@@ -18,156 +18,164 @@
 
 <body>
 
+    <form>
 
 
-    <div class="container border border-secondary px-0">
+<!--contenedir principal  y alerta -->
+        <div class="container border border-secondary px-0">
 
-        <div class="bg-light py-2 border-bottom border-secondary">
-            <h1 class="px-4">Payment form example</h1>
-        </div>
-
-        <div class="alert alert-danger my-3 mx-3" role="alert">
-            Some filds are missing
-        </div>
-
-        <!--card cvc amound -->
-
-        <div class="row mx-2">
-            <div class="col-5">
-                <label for="cardnumber" class="form-label">
-                    <h4>Card #</h4>
-                </label>
-                <input type="number" class="form-control" id="cardnumber" placeholder="xxxxx">
+            <div class="bg-light py-2 border-bottom border-secondary">
+                <h1 class="px-4">Payment form example</h1>
             </div>
 
-            <div class="col-3">
-                <label for="cvv" class="form-label">
-                    <h4>Cvv</h4>
-                </label>
-                <input type="password" class="form-control" id="password" placeholder="0000">
+            <div class="alert alert-danger my-3 mx-3" role="alert">
+                Some filds are missing
             </div>
 
-            <div class="col-4 mt-2">
-                <h4 class="pb-0">Amount</h4>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text bg-body border border-none">$</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
-                        placeholder="amound">
+<!-- primer row card cvc amound -->
 
+            <div class="row mx-2">
+                <div class="col-5">
+                    <label for="cardnumber" class="form-label">
+                        <h4>Card #</h4>
+                    </label>
+                    <input type="number" required class="form-control" id="cardnumber" placeholder="xxxxx">
                 </div>
-            </div>
-        </div>
 
-        <!--first and last name -->
-        <div class="row mx-2 pt-2">
-            <div class="col-6">
-                <label for="amound" class="form-label">
-                    <h4>First name</h4>
-                </label>
-                <input type="text" class="form-control" id="amound">
-            </div>
+                <div class="col-3">
+                    <label for="cvv" class="form-label">
+                        <h4>Cvv</h4>
+                    </label>
+                    <input type="password" required class="form-control" id="password" placeholder="0000">
+                </div>
 
-            <div class="col-6">
-                <label for="amound" class="form-label">
-                    <h4>Last name</h4>
-                </label>
-                <input type="text" class="form-control" id="amound">
-            </div>
-        </div>
+                <div class="col-4 mt-2">
+                    <h4 class="pb-0">Amount</h4>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-body border border-none">$</span>
+                        </div>
+                        <input type="text" required class="form-control" aria-label="Amount (to the nearest dollar)"
+                            placeholder="amound">
 
-
-        <!--city state postal code -->
-        <div class="row mx-2 pt-2">
-            <div class="col-6">
-                <label for="amound" class="form-label">
-                    <h4>City</h4>
-                </label>
-                <input type="text" class="form-control" id="amound">
-            </div>
-
-            <div class="col-3">
-                <label for="amound" class="form-label">
-                    <h4>State</h4>
-                </label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>pick a state</option>
-                    <option value="1">venezuela</option>
-                    <option value="2">dinamarca</option>
-                    <option value="3">espana</option>
-                    <option value="3">francia</option>
-                    <option value="3">otro pais</option>
-                </select>
-            </div>
-
-            <div class="col-3">
-                <label for="amound" class="form-label">
-                    <h4>Postal code</h4>
-                </label>
-                <input type="number" class="form-control" id="cardnumber">
-            </div>
-
-        </div>
-
-        <!--we accept  message -->
-        <div class="row mx-2 pt-3">
-
-            <div class="col-6">
-                <h4>We accept</h4>
-
-                <div class="Payment">
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-brands fa-cc-visa"></i>
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-solid fa-credit-card"></i>
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            <i class="fa-regular fa-credit-card"></i>
-                        </label>
                     </div>
                 </div>
             </div>
 
+<!--segunda row first and last name -->
+            <div class="row mx-2 pt-2">
+                <div class="col-6">
+                    <label for="amound" class="form-label">
+                        <h4>First name</h4>
+                    </label>
+                    <input type="text" required class="form-control" id="amound">
+                </div>
 
-            <div class="col-6">
-                <label for="amound" class="form-label">
-                    <h4>message</h4> </label>
-                <textarea class="form-control" id="message" rows="5"></textarea>
-                <p class="text-secondary">add any notes here</p>
+                <div class="col-6">
+                    <label for="amound" class="form-label">
+                        <h4>Last name</h4>
+                    </label>
+                    <input type="text" required class="form-control" id="amound">
+                </div>
             </div>
 
-             </div>
 
-            <div class="container-fluid bg-light py-2 d-flex flex-row-reverse gap-2">
-                
-                <button  type="button" class="btn btn-primary">send</button>
-                <button  type="button" class="btn btn-secondary">cancel</button>
+            <!--city state postal code -->
+            <div class="row mx-2 pt-2">
+                <div class="col-6">
+                    <label for="city" class="form-label">
+                        <h4>City</h4>
+                    </label>
+                    <input type="text" class="form-control" id="city" required>
+                </div>
+
+                <div class="col-3">
+ 
+                    <label for="country" pb-2 class="form-label" >
+                        <h4>Country</h4>
+                    </label>
+
+
+                    <select  class="form-select" aria-label="Default select example"  required>
+
+                        <option value="" selected>pick a country</option>
+                        <option value="1">venezuela</option>
+                        <option value="2">dinamarca</option>
+                        <option value="3">españa</option>
+                        <option value="3">francia</option>
+                        <option value="3">otro pais</option>
+                    </select>
+                </div>
+
+                <div class="col-3">
+                    <label for="postal-code" required class="form-label">
+                        <h4>Postal code</h4>
+                    </label>
+                    <input type="number" class="form-control" id="postal-code" required>
+                </div>
 
             </div>
 
+<!--tercera row. payments y mensaje -->
+            <div class="row mx-2 pt-3">
+            <!--we accept  message -->
+                <div class="col-6">
+                    <h4>We accept</h4>
+
+                    <div class="Payment">
+
+                        <div class="form-check">
+                            <input class="form-check-input"  type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <i class="fa-solid fa-credit-card"></i>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                            <!--dejar algun cometario -->
+                <div class="col-6">
+                    <label for="message" class="form-label" >
+                        <h4>message</h4> </label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                    <p class="text-secondary">add any notes here</p>
+                </div>
+
+               
+        <!-- botones dentro de un container fluid.-->
+                <div class="container-fluid bg-light py-2 d-flex flex-row-reverse gap-2">
+                    
+                   
+                    <input class="btn btn-primary" type="submit" value="Send" />
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+
+                </div>
 
 
-        </div>
+        </div>       
+    </form>
+
 
 
 
